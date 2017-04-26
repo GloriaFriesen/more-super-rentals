@@ -18,10 +18,10 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: 'AIzaSyCgv5zxHXzf8gQcoR8q3JLdwHTl55Az71s',
-      authDomain: "super-rentals-8634a.firebaseapp.com",
-      databaseURL: "https://super-rentals-8634a.firebaseio.com",
-      storageBucket: "super-rentals-8634a.appspot.com"
+      apiKey: 'AIzaSyB_dzRIkrUNlcWFdRbYBs9lPrqunvZVss8',
+      authDomain: "super-rentals-79701.firebaseapp.com",
+      databaseURL: "https://super-rentals-79701.firebaseio.com",
+      storageBucket: "super-rentals-79701.appspot.com"
     },
 
     APP: {

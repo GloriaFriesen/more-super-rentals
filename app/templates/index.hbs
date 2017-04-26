@@ -3,18 +3,30 @@
 <p>We hope you find exactly what you're looking for in a place to stay.</p>
 
 <ul>
-  {{#each model as |rental|}}
+  {{#each model.rentals as |rental|}}
     <li>{{rental-tile rental=rental}}</li>
   {{/each}}
 </ul>
 
 {{new-rental saveRental2="saveRental3"}}
 
+<h2>All Reviews</h2>
+
+<ul>
+  {{#each model.reviews as |review|}}
+  <li>{{review.rating}} - {{review.content}} - by {{review.author}}</li>
+  {{/each}}
+</ul>
+
+{{new-review saveReview="saveReview"}}
+
+<hr>
+
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
 {{#link-to 'announcements'}}Announcements{{/link-to}}
 <br>
-{{gravatar-image email='mark.aaron.fisher@gmail.com'
+{{gravatar-image email='gloriafriesen@gmail.com'
   title='John Otander'
   alt='John Otander gravatar'
   defaultImage='identicon'
